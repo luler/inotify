@@ -41,7 +41,7 @@ class InotifyHelper
     }
 
     /**
-     *
+     *监控文件变动
      * @param $path //文件路径
      * @param $closure //回调函数
      * @param null $file_suffixes //监控的文件后缀，多个以逗号隔开，格式："php,txt"
