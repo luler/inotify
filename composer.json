@@ -1,0 +1,25 @@
+{
+  "name": "luler/inotify",
+  "description": "监控文件变动事件",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/luler/inotify",
+  "authors": [
+    {
+      "name": "luler",
+      "email": "1207032539@qq.com",
+      "homepage": "https://github.com/luler",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Luler\\Inotify\\": "src/Inotify"
+    }
+  }
+}
