@@ -33,7 +33,7 @@ class InotifyHelper
                     $res [] = realpath($item);
                     continue;
                 }
-                $res = array_merge($res, getAllFiles($item));
+                $res = array_merge($res, self::getAllFiles($item));
             }
             closedir($handle);
             return $res;
@@ -52,7 +52,7 @@ class InotifyHelper
     {
         $original_files = [];
         while (1) {
-            $files = getAllFiles($path);
+            $files = self::getAllFiles($path);
             $res = [];
             foreach ($files as $file) {
                 if (is_dir($file)) {
