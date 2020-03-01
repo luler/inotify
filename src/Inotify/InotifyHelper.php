@@ -48,7 +48,7 @@ class InotifyHelper
      * @param bool $show_change //是否显示变动的文件
      * @param int $check_interval //检查文件变动的事件间隔
      */
-    function notify($path, $closure, $file_suffixes = null, $show_change = true, $check_interval = 3)
+    public static function notify($path, $closure, $file_suffixes = null, $show_change = true, $check_interval = 3)
     {
         $original_files = [];
         while (1) {
